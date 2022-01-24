@@ -35,6 +35,8 @@ pluto
 
 !README.md
 !LICENSE
+
+!*.json
 !./packages/
 # !Makefile
 
