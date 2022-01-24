@@ -35,7 +35,7 @@ pluto
 
 !README.md
 !LICENSE
-
+!packages/
 # !Makefile
 
 # ...even if they are in subdirectories
