@@ -1,0 +1,22 @@
+{
+	"repo":"Test Repo",
+	"packages": [
+	    {
+			"name":"cowsay",
+			"git":"https://github.com/cowsay-org/cowsay.git",
+			"authors": [
+			    "Andrew Janke",
+				"Tony Monroe"
+			],
+			"needs": [
+			    "make"
+			],
+			"build":[
+			    "sudo make install"
+			],
+			"remove":[
+			    "sudo make uninstall"
+			]
+		}
+	]
+}
