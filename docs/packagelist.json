@@ -18,23 +18,6 @@
 			"remove":[
 			    "sudo make uninstall"
 			]
-		},
-		{
-			"name":"pluto",
-			"git":"https://github.com/Turtley12/pluto.git",
-			"description":"Almost a package manager. kind of pointless to have it in it's own package list.",
-			"authors": [
-				"Turtley12"
-			],
-			"needs": [
-			    "go"
-			],
-			"build":[
-			    "sudo bash scripts/install.sh"
-			],
-			"remove":[
-			    "sudo bash scripts/uninstall.sh"
-			]
 		}
 	]
 }
