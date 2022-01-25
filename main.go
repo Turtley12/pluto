@@ -20,12 +20,13 @@ type Repository struct {
 	Packages []Package `json:"packages"`
 }
 type Package struct {
-	Name    string   `json:"name"`
-	Git     string   `json:"git"`
-	Authors []string `json:"authors"`
-	Needs   []string `json:"needs"`
-	Build   []string `json:"build"`
-	Remove  []string `json:"remove"`
+	Name        string   `json:"name"`
+	Git         string   `json:"git"`
+	Description string   `json:"description"`
+	Authors     []string `json:"authors"`
+	Needs       []string `json:"needs"`
+	Build       []string `json:"build"`
+	Remove      []string `json:"remove"`
 }
 
 const (

@@ -4,6 +4,7 @@
 	    {
 			"name":"cowsay",
 			"git":"https://github.com/cowsay-org/cowsay.git",
+			"description":"Cowsay is a configurable talking cow, written in Perl.",
 			"authors": [
 			    "Andrew Janke",
 				"Tony Monroe"
@@ -21,6 +22,7 @@
 		{
 			"name":"pluto",
 			"git":"https://github.com/Turtley12/pluto.git",
+			"description":"Almost a package manager. kind of pointless to have it in it's own package list.",
 			"authors": [
 				"Turtley12"
 			],
