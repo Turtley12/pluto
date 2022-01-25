@@ -1,5 +1,5 @@
 # Pluto
-Pluto is a work in progress package manger. Unlike most package managers, It downloads the source of a package and builds from the source.
+Pluto is almost a package manger. Unlike most package managers, It downloads the source of a package and builds from the source.
 
 ## Using
 To install a package, run `pluto install <package>` you can find all availible packages with `pluto list`
