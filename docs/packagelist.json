@@ -30,10 +30,10 @@
 			    "go"
 			],
 			"build":[
-			    "bash scripts/install.sh"
+			    "sudo bash scripts/install.sh"
 			],
 			"remove":[
-			    "bash scripts/uninstall.sh"
+			    "sudo bash scripts/uninstall.sh"
 			]
 		}
 	]
