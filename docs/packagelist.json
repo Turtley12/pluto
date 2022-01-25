@@ -17,6 +17,22 @@
 			"remove":[
 			    "sudo make uninstall"
 			]
+		},
+		{
+			"name":"pluto",
+			"git":"https://github.com/Turtley12/pluto.git",
+			"authors": [
+				"Turtley12"
+			],
+			"needs": [
+			    "go"
+			],
+			"build":[
+			    "bash ./scripts/install.sh"
+			],
+			"remove":[
+			    "bash ./scripts/uninstall.sh"
+			]
 		}
 	]
 }
