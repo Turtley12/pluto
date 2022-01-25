@@ -4,7 +4,9 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
+	"net/http"
 	"os"
 	"os/exec"
 	"strconv"
@@ -27,8 +29,8 @@ type Package struct {
 }
 
 const (
-	repo_file     = true
-	repo_location = "packagelist.json"
+	repo_file     = false
+	repo_location = "https://turtley12.github.io/pluto/packagelist.json"
 )
 const help = `Welcome to the pluto package manager. Try:
 
@@ -159,8 +161,11 @@ func main() {
 	}
 }
 func loadRepo() {
-	if repo_file {
+	switch repo_file {
+	case true:
 		loadRepoFile(repo_location)
+	case false:
+		loadRepoUrl(repo_location)
 	}
 }
 func loadRepoBytes(repo_bytes []byte) {
@@ -169,6 +174,14 @@ func loadRepoBytes(repo_bytes []byte) {
 func loadRepoFile(file string) {
 	repo_bytes, _ := ioutil.ReadFile(file)
 	loadRepoBytes(repo_bytes)
+}
+func loadRepoUrl(url string) {
+	response, err := http.Get(url)
+	checkError(err)
+	defer response.Body.Close()
+	bytes, err := io.ReadAll(response.Body)
+	checkError(err)
+	loadRepoBytes(bytes)
 }
 
 func checkError(err error) {
