@@ -10,7 +10,7 @@ If you want to add a project to the main package list, follow the example format
 
 When specifying build commands, if your project can be installed and removed with just `make install` and `make uninstall`, you can just use those. If you want a more complicated installation or have a more complicated build process, you can put everything in a script in your project's repository and add something like `bash ./install.sh` 
 
-Package info, using cowsay as an example
+Example Package info for cowsay.
 ```json
 {
   "name": "cowsay",
